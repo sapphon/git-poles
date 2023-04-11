@@ -6,6 +6,7 @@ public class Pole : MonoBehaviour
 {
     public GameObject bottomPrefab;
     public GameObject middlePrefab;
+    public GameObject transformerPrefab;
 
     void Start()
     {
@@ -17,5 +18,6 @@ public class Pole : MonoBehaviour
         GameObject poleBase = GameObject.FindGameObjectWithTag("Pole Base");
         Instantiate(bottomPrefab, poleBase.transform);
         Instantiate(middlePrefab, poleBase.transform);
+        Instantiate(transformerPrefab, poleBase.transform);
     }
 }
