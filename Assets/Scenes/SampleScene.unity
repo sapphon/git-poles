@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottomPrefab: {fileID: 3063867956283763735, guid: 74f367cabe3831642a64b62890d1b495, type: 3}
+  middlePrefab: {fileID: 3063867956283763735, guid: 6ba604d160019c843b0db0ab55cc21d2, type: 3}
 --- !u!4 &81669441
 Transform:
   m_ObjectHideFlags: 0

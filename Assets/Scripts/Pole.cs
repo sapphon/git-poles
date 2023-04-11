@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pole : MonoBehaviour
 {
     public GameObject bottomPrefab;
+    public GameObject middlePrefab;
 
     void Start()
     {
@@ -15,5 +16,6 @@ public class Pole : MonoBehaviour
     {
         GameObject poleBase = GameObject.FindGameObjectWithTag("Pole Base");
         Instantiate(bottomPrefab, poleBase.transform);
+        Instantiate(middlePrefab, poleBase.transform);
     }
 }
