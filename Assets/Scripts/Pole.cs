@@ -9,9 +9,13 @@ public class Pole : MonoBehaviour
     public GameObject transformerPrefab;
     public GameObject wiresPrefab;
 
+    private float voltage = 120;
+    private float amperage = 200;
+    
     void Start()
     {
         this.BuildPole();
+        this.ConnectToGrid();
     }
 
     void BuildPole()
@@ -21,5 +25,10 @@ public class Pole : MonoBehaviour
         Instantiate(middlePrefab, poleBase.transform);
         Instantiate(transformerPrefab, poleBase.transform);
         Instantiate(wiresPrefab, poleBase.transform);
+    }
+    
+    void ConnectToGrid()
+    {
+        FindObjectOfType<ElectricalGrid>().AddPole(voltage, amperage);
     }
 }
